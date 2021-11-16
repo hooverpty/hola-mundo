@@ -10,11 +10,11 @@ from tkinter import *
 ventana = tkinter.Tk()
 #ventana.attributes("-alpha", 0.8) #con este comando hago que la ventana sea transparente y el numero indicara el nivel de transparencia.
 ventana.title("Incio de Sesion") #titulo de la ventana
-ventana.geometry("800x400+340+200") #damos tamano a la ventana y la ubicamos en la pantalla
-ventana.resizable(0,0) #evitamos que el usuario modifique el tamano de la ventana
+ventana.geometry("320x400+340+200") #damos tamano a la ventana y la ubicamos en la pantalla
+#ventana.resizable(0,0) #evitamos que el usuario modifique el tamano de la ventana
 
-frame1 = Frame(ventana, width=350,highlightbackground="blue",highlightthicknes=3)
-frame1.grid(row=0,column=0,padx=20,pady=20,ipadx=150,ipady=20)
+frame1 = Frame(ventana, width=150,highlightbackground="blue",highlightthicknes=3)
+frame1.grid(row=0,column=0,padx=20,pady=20,ipadx=80,ipady=20)
 
 
 #empiezo a declarar un label:
@@ -23,6 +23,8 @@ etiqueta1 = tkinter.Label(frame1, text = "Inicia sesion:")
 etiqueta1.pack(side=TOP)
 etiqueta2 = tkinter.Label(frame1, text = "*****************")
 etiqueta2.pack()
+usuario = tkinter.Label(frame1, text = "Usuario: ")
+usuario.pack(side=LEFT)
 
 
 
