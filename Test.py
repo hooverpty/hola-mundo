@@ -22,7 +22,7 @@ etiqueta4 = tkinter.Label(ventana, text = "Etiqueta4").grid(column=3, row=3)
 etiqueta5 = tkinter.Label(ventana, text = "Etiqueta5", bg = "gray").grid(column=4, row=4)
 
 
-
+#mensaje de prueba
 
 
 
