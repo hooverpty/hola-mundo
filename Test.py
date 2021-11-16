@@ -16,6 +16,7 @@ ventana.resizable(0,0) #evitamos que el usuario modifique el tamano de la ventan
 
 #para empezar a utilizar widgets se utiliza el siguiente codigo:
 etiqueta = tkinter.Label(ventana, text = "Hola Mundo!", bg = "gray") #bg es el color de background de la etiqueta. 
+#hola
 
 #luego para que la etiqueta salga en la ventana se debe utlizar el metodo pack
 etiqueta.pack() #sin especificar donde queremos que vaya la etiqueta
