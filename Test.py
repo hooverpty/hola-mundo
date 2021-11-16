@@ -10,16 +10,30 @@ from tkinter import *
 ventana = tkinter.Tk()
 #ventana.attributes("-alpha", 0.8) #con este comando hago que la ventana sea transparente y el numero indicara el nivel de transparencia.
 ventana.title("Incio de Sesion") #titulo de la ventana
-ventana.geometry("350x400+540+200") #damos tamano a la ventana y la ubicamos en la pantalla
+ventana.geometry("800x400+340+200") #damos tamano a la ventana y la ubicamos en la pantalla
 ventana.resizable(0,0) #evitamos que el usuario modifique el tamano de la ventana
+
+frame1 = Frame(ventana, width=350,highlightbackground="blue",highlightthicknes=3)
+frame1.grid(row=0,column=0,padx=20,pady=20,ipadx=150,ipady=20)
 
 
 #empiezo a declarar un label:
-etiqueta1 = tkinter.Label(ventana, text = "Etiqueta1").grid(column=0, row=0)  
-etiqueta2 = tkinter.Label(ventana, text = "Etiqueta2").grid(column=1, row=1)
-etiqueta3 = tkinter.Label(ventana, text = "Etiqueta3").grid(column=2, row=2)
-etiqueta4 = tkinter.Label(ventana, text = "Etiqueta4").grid(column=3, row=3)
-etiqueta5 = tkinter.Label(ventana, text = "Etiqueta5", bg = "gray").grid(column=4, row=4)
+#etiqueta1 = tkinter.Label(ventana, text = "Etiqueta1").grid(column=0, row=0)  
+etiqueta1 = tkinter.Label(frame1, text = "Inicia sesion:")
+etiqueta1.pack(side=TOP)
+etiqueta2 = tkinter.Label(frame1, text = "*****************")
+etiqueta2.pack()
+
+
+
+
+
+
+
+#etiqueta8 = tkinter.Label(ventana, text = "Etiqueta2").grid(column=1, row=1)
+#etiqueta9 = tkinter.Label(ventana, text = "Etiqueta3").grid(column=2, row=2)
+#etiqueta10 = tkinter.Label(ventana, text = "Etiqueta4").grid(column=3, row=3)
+
 
 
 #mensaje de prueba
