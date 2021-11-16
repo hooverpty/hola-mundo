@@ -2,21 +2,22 @@
 # Ing. Haim Martinez
 # jhaim04@gmail.com
 
-#con esto importaomos la libreria y luego vamos declarando los widgets que se neceistan:
+#con esto importamos la libreria y luego vamos declarando los widgets que se neceistan:
 import tkinter #esta es la forma como declaramos la libreria tkinter en python3
 
 #para declarar una ventana utilizamos el siguiente codigo:
 ventana = tkinter.Tk()
-#ventana.attributes("-alpha", 0.8) #con este comando hago que la ventana sea transparente y el numero indicara el nivel de transparencia.
+ventana.attributes("-alpha", 0.8) #con este comando hago que la ventana sea transparente y el numero indicara el nivel de transparencia.
+ventana.title("Incio de Sesion...")
 
-#para redimensionar el tamano de la venta se utilizaria el siguiente metodo:
-ventana.geometry("600x300")
+ventana.geometry("300x300+540+200") #damos tamano a la ventana y la ubicamos en la pantalla
+ventana.resizable(0,0) #evitamos que el usuario modifique el tamano de la ventana
 
 #para empezar a utilizar widgets se utiliza el siguiente codigo:
-#etiqueta = tkinter.Label(ventana, text = "Hola Mundo!", bg = "gray") #bg es el color de background de la etiqueta. 
+etiqueta = tkinter.Label(ventana, text = "Hola Mundo!", bg = "gray") #bg es el color de background de la etiqueta. 
 
 #luego para que la etiqueta salga en la ventana se debe utlizar el metodo pack
-#etiqueta.pack() #sin especificar donde queremos que vaya la etiqueta
+etiqueta.pack() #sin especificar donde queremos que vaya la etiqueta
 
 #si quisiera empezar a definir donde quiero que vaya la etiquida podria utlizar el siguiente metodo:
 #etiqueta.pack(side= tkinter.BOTTOM)
@@ -62,10 +63,10 @@ boton1 = tkinter.Button(ventana, text = "boton1")
 boton2 = tkinter.Button(ventana, text = "boton2")
 boton3 = tkinter.Button(ventana, text = "boton3")
 
-boton1.grid(row = 2, column = 2)
-boton2.grid(row = 3, column = 3)
+#boton1.grid(row = 2, column = 2)
+#boton2.grid(row = 3, column = 3)
 
-
+#este es un mensaje de prueba
 
 #con este codigo se crea el mainloop para que siempre que se ejecute el codigo se corra el programa:
 ventana.mainloop()
