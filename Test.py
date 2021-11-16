@@ -5,6 +5,7 @@
 #con esto importamos la libreria y luego vamos declarando los widgets que se neceistan:
 import tkinter #esta es la forma como declaramos la libreria tkinter en python3
 
+
 #para declarar una ventana utilizamos el siguiente codigo:
 ventana = tkinter.Tk()
 ventana.attributes("-alpha", 0.8) #con este comando hago que la ventana sea transparente y el numero indicara el nivel de transparencia.
