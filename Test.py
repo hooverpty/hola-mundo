@@ -10,21 +10,36 @@ from tkinter import *
 ventana = tkinter.Tk()
 #ventana.attributes("-alpha", 0.8) #con este comando hago que la ventana sea transparente y el numero indicara el nivel de transparencia.
 ventana.title("Incio de Sesion") #titulo de la ventana
-ventana.geometry("320x400+340+200") #damos tamano a la ventana y la ubicamos en la pantalla
-#ventana.resizable(0,0) #evitamos que el usuario modifique el tamano de la ventana
+ventana.geometry("400x400+340+200") #damos tamano a la ventana y la ubicamos en la pantalla
+ventana.resizable(0,0) #evitamos que el usuario modifique el tamano de la ventana
 
-frame1 = Frame(ventana, width=150,highlightbackground="blue",highlightthicknes=3)
-frame1.grid(row=0,column=0,padx=20,pady=20,ipadx=80,ipady=20)
-
+labelframe1 = LabelFrame(ventana, text="Introduce tus Datos", padx=10, pady=10)
+#highlightthicknes=6 -- esto es el grueso de la linea
+#highlightbackground="blue" -- esto es el color de la linea de bordea el frame
+#frame1.grid(row=0,column=0,padx=20,pady=20,ipadx=80,ipady=20)
+labelframe1.pack(fill="both", expand="yes")
 
 #empiezo a declarar un label:
 #etiqueta1 = tkinter.Label(ventana, text = "Etiqueta1").grid(column=0, row=0)  
-etiqueta1 = tkinter.Label(frame1, text = "Inicia sesion:")
-etiqueta1.pack(side=TOP)
-etiqueta2 = tkinter.Label(frame1, text = "*****************")
-etiqueta2.pack()
-usuario = tkinter.Label(frame1, text = "Usuario: ")
-usuario.pack(side=LEFT)
+#etiqueta1 = tkinter.Label(frame1, text = "Inicia sesion:")
+#etiqueta1.grid(row=0, column = 3)
+#etiqueta2 = tkinter.Label(frame1, text = "*****************")
+#etiqueta2.pack()
+#usuario = tkinter.Label(frame1, text = "Usuario: ")
+#usuario.pack(side=LEFT)
+#contrasena = tkinter.Label(frame1, text = "Contrasena: ")
+#contrasena.pack(side=LEFT)
+
+
+
+
+#frame2 = Frame(ventana, width=60,highlightbackground="red",highlightthicknes=6,bd=20)
+#highlightthicknes=6 -- esto es el grueso de la linea
+#highlightbackground="blue" -- esto es el color de la linea de bordea el frame
+#frame2.grid(row=0,column=1,padx=20,pady=20,ipadx=80,ipady=20)
+
+
+
 
 
 
