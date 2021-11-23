@@ -9,15 +9,18 @@ from tkinter import *
 #para declarar una ventana utilizamos el siguiente codigo:
 ventana = tkinter.Tk()
 #ventana.attributes("-alpha", 0.8) #con este comando hago que la ventana sea transparente y el numero indicara el nivel de transparencia.
-ventana.title("Incio de Sesion") #titulo de la ventana
-ventana.geometry("400x400+340+200") #damos tamano a la ventana y la ubicamos en la pantalla
+ventana.title("Haim Martinez - jhaim04@gmail.com") #titulo de la ventana
+ventana.geometry("400x400+400+200") #damos tamano a la ventana y la ubicamos en la pantalla
 ventana.resizable(0,0) #evitamos que el usuario modifique el tamano de la ventana
 
-labelframe1 = LabelFrame(ventana, text="Introduce tus Datos", padx=10, pady=10)
+labelframe1 = LabelFrame(ventana, text="    Inicio de Sesion    ", padx=20, pady=20)
 #highlightthicknes=6 -- esto es el grueso de la linea
 #highlightbackground="blue" -- esto es el color de la linea de bordea el frame
 #frame1.grid(row=0,column=0,padx=20,pady=20,ipadx=80,ipady=20)
-labelframe1.pack(fill="both", expand="yes")
+labelframe1.pack(padx=20, pady=20)
+usuario=tkinter.Label(labelframe1, text= "Usuario:").pack()
+contrasena=tkinter.Label(labelframe1, text = "Contrasena:").pack()
+b=Button(labelframe1, text="Ingresar", padx=20, pady=10).pack()
 
 #empiezo a declarar un label:
 #etiqueta1 = tkinter.Label(ventana, text = "Etiqueta1").grid(column=0, row=0)  
