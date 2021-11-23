@@ -2,25 +2,42 @@
 # Ing. Haim Martinez
 # jhaim04@gmail.com
 
-#con esto importamos la libreria y luego vamos declarando los widgets que se neceistan:
-import tkinter #esta es la forma como declaramos la libreria tkinter en python3
-from tkinter import *
 
-#para declarar una ventana utilizamos el siguiente codigo:
+import tkinter # Esta es la libreria que estoy utilizando para realizar las interfaces graficas.
+from tkinter import * #Importamos todos los widgets que tkinter tiene para generar las interfaces graficas.
+
+#Declaracion de la ventana de logueo
 ventana = tkinter.Tk()
 #ventana.attributes("-alpha", 0.8) #con este comando hago que la ventana sea transparente y el numero indicara el nivel de transparencia.
 ventana.title("Haim Martinez - jhaim04@gmail.com") #titulo de la ventana
 ventana.geometry("400x400+400+200") #damos tamano a la ventana y la ubicamos en la pantalla
 ventana.resizable(0,0) #evitamos que el usuario modifique el tamano de la ventana
 
-labelframe1 = LabelFrame(ventana, text="    Inicio de Sesion    ", padx=20, pady=20)
-#highlightthicknes=6 -- esto es el grueso de la linea
-#highlightbackground="blue" -- esto es el color de la linea de bordea el frame
-#frame1.grid(row=0,column=0,padx=20,pady=20,ipadx=80,ipady=20)
-labelframe1.pack(padx=20, pady=20)
-usuario=tkinter.Label(labelframe1, text= "Usuario:").pack()
-contrasena=tkinter.Label(labelframe1, text = "Contrasena:").pack()
-b=Button(labelframe1, text="Ingresar", padx=20, pady=10).pack()
+#Declaracion del Label Frame1
+labelframe1 = LabelFrame(ventana, text="    Inicio de Sesion    ", padx=20, pady=20) #declaramos el labelframe1
+labelframe1.pack(padx=20, pady=20) #le indicamos que muestre en pantalla el labelframe1
+
+#Declaracion de los label de usuario y contraseña
+usuario=tkinter.Label(labelframe1, text= "Usuario:")
+usuario.pack()
+contrasena=tkinter.Label(labelframe1, text = "Contrasena:")
+contrasena.pack()
+
+#Declaracion del los botones
+b=Button(labelframe1, text="Ingresar", padx=20, pady=10)
+b.pack()
+
+
+
+
+
+
+
+
+
+
+################################### anotaciones ####################################################
+
 
 #empiezo a declarar un label:
 #etiqueta1 = tkinter.Label(ventana, text = "Etiqueta1").grid(column=0, row=0)  
@@ -34,33 +51,15 @@ b=Button(labelframe1, text="Ingresar", padx=20, pady=10).pack()
 #contrasena.pack(side=LEFT)
 
 
-
-
 #frame2 = Frame(ventana, width=60,highlightbackground="red",highlightthicknes=6,bd=20)
 #highlightthicknes=6 -- esto es el grueso de la linea
 #highlightbackground="blue" -- esto es el color de la linea de bordea el frame
 #frame2.grid(row=0,column=1,padx=20,pady=20,ipadx=80,ipady=20)
 
 
-
-
-
-
-
-
-
-
 #etiqueta8 = tkinter.Label(ventana, text = "Etiqueta2").grid(column=1, row=1)
 #etiqueta9 = tkinter.Label(ventana, text = "Etiqueta3").grid(column=2, row=2)
 #etiqueta10 = tkinter.Label(ventana, text = "Etiqueta4").grid(column=3, row=3)
-
-
-
-#mensaje de prueba
-
-
-
-
 
 
 #luego para que la etiqueta salga en la ventana se debe utlizar el metodo pack
