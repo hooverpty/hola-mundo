@@ -10,18 +10,23 @@ from tkinter import * #Importamos todos los widgets que tkinter tiene para gener
 ventana = tkinter.Tk()
 #ventana.attributes("-alpha", 0.8) #con este comando hago que la ventana sea transparente y el numero indicara el nivel de transparencia.
 ventana.title("Haim Martinez - jhaim04@gmail.com") #titulo de la ventana
-ventana.geometry("400x400+400+200") #damos tamano a la ventana y la ubicamos en la pantalla
+ventana.geometry("300x300+400+200") #damos tamano a la ventana y la ubicamos en la pantalla
 ventana.resizable(0,0) #evitamos que el usuario modifique el tamano de la ventana
 
 #Declaracion del Label Frame1
-labelframe1 = LabelFrame(ventana, text="    Inicio de Sesion    ", padx=20, pady=20) #declaramos el labelframe1
+labelframe1 = LabelFrame(ventana, text="    Inicio de Sesion    ", padx=50, pady=40) #declaramos el labelframe1
 labelframe1.pack(padx=20, pady=20) #le indicamos que muestre en pantalla el labelframe1
 
 #Declaracion de los label de usuario y contraseña
 usuario=tkinter.Label(labelframe1, text= "Usuario:")
 usuario.pack()
+user = tkinter.Entry(labelframe1, bd = 3)
+user.pack()
 contrasena=tkinter.Label(labelframe1, text = "Contrasena:")
 contrasena.pack()
+password = tkinter.Entry(labelframe1, bd = 3)
+password.pack()
+
 
 #Declaracion del los botones
 b=Button(labelframe1, text="Ingresar", padx=20, pady=10)
